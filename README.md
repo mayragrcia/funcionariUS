@@ -12,11 +12,14 @@
 ## 👨🏻‍🏫 Professor
 ### Diogo S. Deconto
 
+<br />
 
 ## 🚀 Alunos
 ### Mayra A. M. Garcia
 ### Rafael Trog
 
+
+<br />
 
 # 💻 BackEnd da aplicação
 [/API](https://github.com/mayragrcia/funcionariUS/tree/main/API)
