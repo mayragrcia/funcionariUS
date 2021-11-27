@@ -1,12 +1,13 @@
 
 # Frontend
 
+  
+
 ### Projeto realizado com:
 
- - C# WebApi
- - Banco de Dados na Azure
-
-
+ - Angular
+ - Typescript
+ - MaterialUI
 ### Execução
 ```
 npm i
