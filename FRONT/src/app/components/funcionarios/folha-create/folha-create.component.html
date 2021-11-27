@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-title>
+        Nova Folha de Pagamento
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="funcionario.nomeCompleto" name="nomeCompleto" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF" [value]="funcionario.cpf" name="cpf" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <span matPrefix disabled>R$ &nbsp;</span>
+            <input matInput placeholder="Salário Bruto (R$)" currencyMask [options]="{ align: 'left', prefix: '', thousands: '.', decimal: ',' }" [value]="funcionario.salarioBruto" name="salarioBruto" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cargo" [value]="funcionario.idCargoFuncionario" name="idCargoFuncionario" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [(ngModel)]="folha.horasTrabalhadas" placeholder="Horas Trabalhadas" name="horasTrabalhadas">
+        </mat-form-field>
+    </form>
+    <div class="buttonsGroup">
+        <button mat-raised-button (click)="create()" class="blu-btn">
+            Criar
+        </button>
+        <button mat-raised-button (click)="cancel()" color="warn">
+            Cancelar
+        </button>
+    </div>
+</mat-card>

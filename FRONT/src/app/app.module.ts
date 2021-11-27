@@ -31,11 +31,18 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort'
 import localePt from '@angular/common/locales/pt'
 import { registerLocaleData } from '@angular/common';
+import { FuncionariosCreateComponent } from './components/funcionarios/funcionarios-create/funcionarios-create.component';
 import { CargosCreateComponent } from './components/cargos/cargos-create/cargos-create.component';
+import { FuncionariosCrudComponent } from './views/funcionarios-crud/funcionarios-crud.component';
+import { FuncionariosReadComponent } from './components/funcionarios/funcionarios-read/funcionarios-read.component';
 import { CargosCrudComponent } from './views/cargos-crud/cargos-crud.component';
 import { CargosReadComponent } from './components/cargos/cargos-read/cargos-read.component';
 import { CargosDeleteComponent } from './components/cargos/cargos-delete/cargos-delete.component';
 import { CargosUpdateComponent } from './components/cargos/cargos-update/cargos-update.component';
+import { FuncionariosDeleteComponent } from './components/funcionarios/funcionarios-delete/funcionarios-delete.component';
+import { FuncionariosUpdateComponent } from './components/funcionarios/funcionarios-update/funcionarios-update.component';
+import { FuncionarioReadComponent } from './components/funcionarios/funcionario-read/funcionario-read.component';
+import { FolhaCreateComponent } from './components/funcionarios/folha-create/folha-create.component'
 
 registerLocaleData(localePt)
 
@@ -48,11 +55,18 @@ registerLocaleData(localePt)
     HomeComponent,
     RedDirective,
     ForDirective,
+    FuncionariosCreateComponent,
     CargosCreateComponent,
+    FuncionariosCrudComponent,
+    FuncionariosReadComponent,
     CargosCrudComponent,
     CargosReadComponent,
     CargosDeleteComponent,
-    CargosUpdateComponent
+    CargosUpdateComponent,
+    FuncionariosDeleteComponent,
+    FuncionariosUpdateComponent,
+    FuncionarioReadComponent,
+    FolhaCreateComponent
   ],
   imports: [
     BrowserModule,

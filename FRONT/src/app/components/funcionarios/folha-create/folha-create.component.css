@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.buttonsGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+span[matPrefix][disabled] {
+    color: #00000061;
+}

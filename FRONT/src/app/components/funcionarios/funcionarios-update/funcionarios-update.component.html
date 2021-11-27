@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-title>
+        Editar Funcionário
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="ID" [(ngModel)]="funcionario.id" name="id" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="funcionario.nomeCompleto" name="nomeCompleto">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cpf" mask="000.000.000-00" [dropSpecialCharacters]="false" [(ngModel)]="funcionario.cpf" name="cpf">
+        </mat-form-field>
+        <mat-form-field>
+            <span matPrefix>R$ &nbsp;</span>
+            <input matInput placeholder="Salário Bruto" currencyMask [options]="{ align: 'left', prefix: '', thousands: '.', decimal: ',' }" [(ngModel)]="funcionario.salarioBruto" name="salarioBruto">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Cargo</mat-label>
+            <mat-select [(ngModel)]="funcionario.idCargoFuncionario" [(value)]="funcionario.idCargoFuncionario" name="idCargoFuncionario">
+                <mat-option *ngFor="let cargo of cargos" [value]="cargo.id">
+                    {{cargo.nomeCargo}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+    <div class="buttonsGroup">
+        <button mat-raised-button (click)="updateFuncionario()" class="blu-btn">
+            Atualizar
+        </button>
+        <button mat-raised-button (click)="cancel()" color="warn">
+            Cancelar
+        </button>
+    </div>
+</mat-card>
