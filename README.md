@@ -1,11 +1,12 @@
 
 # 💡 Trabalho de Desenvolvimento de Software
 
-
+<br />
 # FuncionariUS
 
   ### Automatize a geração de folhas de pagamento dos funcionários!
 
+<br />
 ## 👨🏻‍🏫 Professor
 ### Diogo S. Deconto
 
