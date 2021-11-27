@@ -1,0 +1,17 @@
+.home .title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .subtitle {
+    font-size: 1.1rem;
+    margin-top: 40px; 
+}
+
+.funcionarius {
+    padding: 0 10px;
+    background-color: #1A419A;
+    color: #fff;
+    font-weight: bold;
+}

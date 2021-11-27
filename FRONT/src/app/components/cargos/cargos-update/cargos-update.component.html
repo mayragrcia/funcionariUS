@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>
+        Editar Cargo
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="ID" [(ngModel)]="cargos.id" name="id" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="cargos.nomeCargo" name="nomeCargo">
+        </mat-form-field>
+    </form>
+    <div class="buttonsGroup">
+        <button mat-raised-button (click)="updateCargo()" class="blu-btn">
+            Atualizar
+        </button>
+        <button mat-raised-button (click)="cancel()" color="warn">
+            Cancelar
+        </button>
+    </div>
+</mat-card>

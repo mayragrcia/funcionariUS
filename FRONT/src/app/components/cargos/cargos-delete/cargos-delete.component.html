@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>
+        Excluir Cargo
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="ID" [value]="cargo.id" name="id" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="cargo.nomeCargo" name="nomeCargo" disabled>
+        </mat-form-field>
+    </form>
+    <div class="buttonsGroup">
+        <button mat-raised-button (click)="deleteCargo()" class="blu-btn">
+            Excluir
+        </button>
+        <button mat-raised-button (click)="cancel()" color="warn">
+            Cancelar
+        </button>
+    </div>
+</mat-card>
