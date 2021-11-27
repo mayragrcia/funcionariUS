@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.red {
+    color: #e35e6b;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.msg-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.msg-error {
+    background-color: #e35e6b;
+    color: #fff;
+}
+
+.blu-btn {
+    background-color: #1A419A;
+    color: #fff;
+}
+
+.del-btn {
+    background-color: #db1515;
+    color: #fff;
+}
+
+.del-btn i {
+    margin-left: 5px;
+}
+
+.edit-btn {
+    background-color: #195aa3;
+    color: #fff;
+}
+
+.edit-btn i {
+    margin-left: 5px;
+}
+
+.eye-btn {
+    background-color: #5f5f5f;
+    color: #fff;
+}
+
+.eye-btn i {
+    margin-left: 5px;
+}
+
+.actions-row {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
